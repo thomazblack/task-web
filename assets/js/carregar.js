@@ -4,6 +4,7 @@ window.addEventListener("load", atualizar)
 
       document.querySelector("#lista-tarefas").innerHTML = ""
       let tarefas =JSON.parse(localStorage.getItem("tarefas")) || []
+      console.log(tarefas)
       tarefas.forEach (tarefa=> criaCard (tarefa))
     }
 

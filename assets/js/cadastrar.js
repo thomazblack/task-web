@@ -1,8 +1,10 @@
+
+var contador = 0;
+let tarefas = []
+
 document.querySelector("#botao-cadastrar").addEventListener("click",  () => {
 
-let tarefas =JSON.parse( localStorage.getItem("tarefas")) || []
 
-console.log(tarefas)
 
     const tarefa = {
         id: Date.now(), 
@@ -12,8 +14,10 @@ console.log(tarefas)
         concluida: false
     }
 
-    tarefas.push(tarefa)
+    tarefas[contador]=(tarefa)
     localStorage.setItem("tarefa", JSON.stringify(tarefa))
+    localStorage.setItem("tarefas", JSON.stringify(tarefas))
+   contador ++
 
     window.location.href = "index.html"
 })
