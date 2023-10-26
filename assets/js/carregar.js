@@ -3,10 +3,15 @@ window.addEventListener("load", atualizar)
     function atualizar(){
 
       document.querySelector("#lista-tarefas").innerHTML = ""
-      let tarefas =JSON.parse(localStorage.getItem("tarefas")) || []
-      console.log(tarefas)
-      tarefas.forEach (tarefa=> criaCard (tarefa))
-    }
+      let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
+      tarefas.forEach(tarefa => criarCard(tarefa))
+  }
+
+    //  document.querySelector("#lista-tarefas").innerHTML = ""
+    //  let tarefas =JSON.parse(localStorage.getItem("tarefas")) || []
+    //  console.log(tarefas)
+    //  tarefas.forEach (tarefa=> criaCard (tarefa))
+   
 
 
 function criaCard (tarefa){

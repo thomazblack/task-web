@@ -12,4 +12,5 @@ function apagar(id){
 
     //salvar o localstorage
     localStorage.setItem("tarefas",JSON.stringify (tarefas_filtradas))
+    calcularEstatiscas()
 }
