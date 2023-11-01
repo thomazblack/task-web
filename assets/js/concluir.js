@@ -4,14 +4,14 @@ function concluir (id){
    const tarefas = JSON.parse (localStorage.getItem("tarefas")) || []
 
     //buscar a tarefa com id
-    let tarefa = tarefas.find(t => t.id === id )
+   let tarefa = tarefas.find(t => t.id === id )
 
     //alterar o estado da tarefa
-    tarefas.concluida = true
+     tarefas.concluida = true
 
     //salvar no locastorage
     localStorage.setItem("tarefas",JSON.stringify (tarefas))
     atualizar ()
-
+    calcularEstatisticas()
 
 }
