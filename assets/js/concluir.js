@@ -12,6 +12,10 @@ function concluir (id){
     //salvar no locastorage
     localStorage.setItem("tarefas",JSON.stringify (tarefas))
     atualizar ()
+<<<<<<< HEAD
     calcularEstatisticas()
+=======
+  calcularEstatiscas()
+>>>>>>> 825ac178b93f91714b48886d9ac2b7871d9deefe
 
 }

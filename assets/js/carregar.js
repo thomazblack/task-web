@@ -2,12 +2,25 @@
     
  //   function atualizar(){
 
+<<<<<<< HEAD
    //   document.querySelector("#lista-tarefas").innerHTML = ""
     //  let tarefas =JSON.parse(localStorage.getItem("tarefas")) || []
   //    console.log(tarefas)
     //  tarefas.forEach (tarefa=> criaCard (tarefa))
    // }
    window.addEventListener("load", atualizar )
+=======
+      document.querySelector("#lista-tarefas").innerHTML = ""
+      let tarefas = JSON.parse(localStorage.getItem("tarefas")) || []
+      tarefas.forEach(tarefa => criarCard(tarefa))
+  }
+
+    //  document.querySelector("#lista-tarefas").innerHTML = ""
+    //  let tarefas =JSON.parse(localStorage.getItem("tarefas")) || []
+    //  console.log(tarefas)
+    //  tarefas.forEach (tarefa=> criaCard (tarefa))
+   
+>>>>>>> 825ac178b93f91714b48886d9ac2b7871d9deefe
 
    function atualizar(){
        document.querySelector("#lista-tarefas").innerHTML = ""
